@@ -1,0 +1,15 @@
+aside {
+  background-color: rgb(37, 191, 202);
+  width: 30%;
+}
+
+#profilePicture {
+  width: 150px;
+  border-radius: 100px;
+  border: 5px solid rgb(28, 133, 98);
+  margin: auto;
+}
+
+.iconImage {
+  width: 30px;
+}
