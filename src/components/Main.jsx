@@ -3,6 +3,7 @@ import React from 'react';
 import publishingIcon from '../images/publishingIcon.png';
 import pictureIcon from '../images/pictureIcon.png';
 import movieIcon from '../images/movieIcon.png';
+import data from '../data'
 
 export default function Main() {
   return (
