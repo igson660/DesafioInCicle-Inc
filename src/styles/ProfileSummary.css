@@ -1,6 +1,10 @@
 aside {
   background-color: rgb(37, 191, 202);
-  width: 30%;
+  width: 15%;
+  height: 100%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 30px;
 }
 
 #profilePicture {

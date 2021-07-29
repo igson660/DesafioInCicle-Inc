@@ -1,0 +1,22 @@
+main{
+  width: 50%;
+}
+.section_input {
+  background-color: blue;
+  margin: 15px;
+  border-radius: 30px;
+  height: 150px;
+}
+
+.img_main_input {
+  width: 30px;
+}
+
+input {
+  width: 600px;
+}
+
+.div_main {
+  background-color: brown;
+  align-content: space-between;
+}

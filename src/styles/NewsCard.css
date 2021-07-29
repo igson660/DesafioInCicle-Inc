@@ -1,0 +1,10 @@
+.section_card {
+  background-color: blue;
+  margin: 15px;
+  border-radius: 30px;
+}
+
+img {
+  width: 25px;
+  margin: 3px;
+}

@@ -1,0 +1,16 @@
+.div_Footer_card {
+  background-color: blueviolet;
+  padding-left: 15%;
+}
+
+.img_Footer_card {
+  width: 20px;
+  margin: 2px;
+  height: 15px
+}
+
+.button_Footer_card{
+  width: 120px;
+  border-radius: 20px;
+  margin-left: 5%;
+}

@@ -9,7 +9,7 @@ const data = [
 },
 {
   name:"Juliana Fonseca",
-  time:"Publicado há cerca de 2 hgoras",
+  time:"Publicado há cerca de 2 horas",
   privacy:false,
   publication:"A amizade desenvolve a felicidade e reduz o sofrimento, duplicando a nossa alegria e dividindo a nossa dor.",
   comments: 0,
