@@ -1,5 +1,6 @@
 const data = [
-  {
+{
+  id: 1,
   name:"Juliana Fonseca",
   time:"Publicado agora",
   privacy:true,
@@ -8,6 +9,7 @@ const data = [
   shares: 0,
 },
 {
+  id: 2,
   name:"Juliana Fonseca",
   time:"Publicado há cerca de 2 horas",
   privacy:false,

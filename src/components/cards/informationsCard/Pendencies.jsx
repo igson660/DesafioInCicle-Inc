@@ -1,5 +1,5 @@
 import React from 'react';
-// import '../styles/ProfileSummary.css';
+import '../../../styles/Pendencies.css';
 
 export default function Pendencies() {
 
@@ -12,9 +12,11 @@ export default function Pendencies() {
     return dataAtual
   }
   return (
-    <section>
+    <section className="section_pendencies">
       <h1>Pendencias</h1>
-      <div>{ nowDate() }</div>
+      <div className="div_pendencies">
+        { nowDate() }
+      </div>
       <p>Você não possui nenhuma pendência para Hoje</p>
     </section>
   );

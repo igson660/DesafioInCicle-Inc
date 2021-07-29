@@ -1,0 +1,12 @@
+.section_pendencies {
+  background-color: rgb(238, 239, 250);
+  padding: 1px;
+  margin: 10px;
+  border-radius: 30px;
+}
+
+.div_pendencies {
+  background-color: rgb(169, 169, 173);
+  width: 100%;
+  margin: 0px;
+}

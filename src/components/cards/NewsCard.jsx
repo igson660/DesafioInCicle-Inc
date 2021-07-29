@@ -6,8 +6,34 @@ import padlockIcon from '../../images/padlockIcon.png';
 import globeIcon from '../../images/globeIcon.jpg';
 import likeIcon1 from '../../images/likeIcon1.png';
 import FooterCard from './footerCard/FooterCard';
+import useLike from  '../../hook/Like'
 
-export default function ProfileSummary({name, time, privacy, publication, comments, shares }) {
+export default function NewsCard({id, name, time, privacy, publication, comments, shares }) {
+  const { like } = useLike()
+  console.log(like, id);
+  function checkLike(param) {
+    if(param === 1 && like === 1) {
+       return (
+         <>
+          <img src={ likeIcon1 } alt="Icone de Curtir" />
+          <span>{like} pessoas Curtiram isso </span>
+         </>
+       )
+    } else if((param === 2 && like === 1) || (param === 2 && like !== 1)) {
+      return (
+        <>
+          <img src={ likeIcon1 } alt="Icone de Curtir" />
+          <span>{shares} pessoas Curtiram isso </span>
+      </>)
+    } else {
+      return (
+        <>
+          <img src={ likeIcon1 } alt="Icone de Curtir" />
+          <span>Seja o Primeiro a curtir </span>
+      </>)
+    }
+  }
+
   return (
     <section className="section_card">
       <div>
@@ -31,20 +57,12 @@ export default function ProfileSummary({name, time, privacy, publication, commen
       </div>
       <div>
         {
-          shares === 0 ? (
-            <>
-              <img src={ likeIcon1 } alt="Icone de Curtir" />
-              <span>Seja o primeiro a curtir essa publicação</span>
-            </>
-          ) : (
-            <>
-              <img src={ likeIcon1 } alt="Icone de Curtir" />
-              <span>{shares} pessoas Curtiram isso </span>
-            </>
-          )
+          checkLike(id)
         }
       </div>
-      <FooterCard />
+      <FooterCard
+      id={ id }
+      />
     </section>
   );
 }

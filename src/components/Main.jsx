@@ -29,6 +29,8 @@ export default function Main() {
       {
         data.map((people, index) => (
         <NewsCard
+        key={ index }
+        id={people.id}
         name={people.name}
         time={people.time}
         privacy={people.privacy}

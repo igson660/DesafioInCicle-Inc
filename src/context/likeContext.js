@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 export const LikeContext = createContext();
 
 export default function LikeContextProvider({ children }) {
-  const [like, setLike] = useState([1, 2]);
+  const [like, setLike] = useState();
 
   return (
     <LikeContext.Provider
