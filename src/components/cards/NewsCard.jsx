@@ -10,7 +10,7 @@ import useLike from  '../../hook/Like'
 
 export default function NewsCard({id, name, time, privacy, publication, comments, shares }) {
   const { like } = useLike()
-  console.log(like, id);
+  
   function checkLike(param) {
     if(param === 1 && like === 1) {
        return (
@@ -37,22 +37,27 @@ export default function NewsCard({id, name, time, privacy, publication, comments
   return (
     <section className="section_card">
       <div>
-        <img alt={`Imagem de Perfil ${name}`} src={ otherProfilePictures } id="otherProfilePicture"/>
-        <h1>{name}</h1>
-        <span>
-          <img src={ clockIcon } alt="Icone de Relógio" /> {time }
-        </span>
-          { privacy ? (
-            <>
-              <img src={ padlockIcon } alt="Icone de Cadiado" />
-              <span>Somente eu</span>
-            </>) : (
-              <>
-                <img src={ globeIcon } alt="Icone de Globo" />
-                <span>Público</span>
-              </>
-            )
-          }
+        <div className="div_card">
+          <img alt={`Imagem de Perfil ${name}`} src={ otherProfilePictures } id="otherProfilePicture"
+          />
+          <div>
+            <h1>{name}</h1>
+            <span>
+              <img src={ clockIcon } alt="Icone de Relógio" /> {time }
+            </span>
+              { privacy ? (
+                <>
+                  <img src={ padlockIcon } alt="Icone de Cadiado" />
+                  <span>Somente eu</span>
+                </>) : (
+                  <>
+                    <img src={ globeIcon } alt="Icone de Globo" />
+                    <span>Público</span>
+                  </>
+                )
+              }
+            </div>
+          </div>
         <p>{ publication }</p>
       </div>
       <div>

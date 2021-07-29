@@ -2,11 +2,12 @@
   background-color: rgb(238, 239, 250);
   margin: 15px;
   border-radius: 30px;
+  height: 30%;
 }
 
 #otherProfilePicture {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   border-radius: 200px;
   border: 5px solid rgb(200, 222, 251);
   
@@ -15,4 +16,8 @@
 img {
   width: 20px;
   margin: 3px;
+}
+
+.div_card {
+  display: flex;
 }
