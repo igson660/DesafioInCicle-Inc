@@ -2,7 +2,7 @@ main{
   width: 50%;
 }
 .section_input {
-  background-color: blue;
+  background-color: rgb(238, 239, 250);
   margin: 15px;
   border-radius: 30px;
   height: 150px;
@@ -17,6 +17,6 @@ input {
 }
 
 .div_main {
-  background-color: brown;
   align-content: space-between;
+  margin: 20px;
 }

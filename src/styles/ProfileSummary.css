@@ -1,5 +1,5 @@
-aside {
-  background-color: rgb(37, 191, 202);
+#aside_profileSummary {
+  background-color: rgb(238, 239, 250);
   width: 15%;
   height: 100%;
   padding: 10px;
@@ -10,7 +10,7 @@ aside {
 #profilePicture {
   width: 150px;
   border-radius: 100px;
-  border: 5px solid rgb(28, 133, 98);
+  border: 5px solid rgb(200, 222, 251);
   margin: auto;
 }
 

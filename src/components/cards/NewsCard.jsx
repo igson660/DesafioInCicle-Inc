@@ -11,7 +11,7 @@ export default function ProfileSummary({name, time, privacy, publication, commen
   return (
     <section className="section_card">
       <div>
-        <img alt={`Imagem de Perfil ${name}`} src={ otherProfilePictures } id="profilePicture"/>
+        <img alt={`Imagem de Perfil ${name}`} src={ otherProfilePictures } id="otherProfilePicture"/>
         <h1>{name}</h1>
         <span>
           <img src={ clockIcon } alt="Icone de Relógio" /> {time }

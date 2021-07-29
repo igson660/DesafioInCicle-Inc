@@ -7,7 +7,7 @@ import collegeIcon from '../images/collegeIcon.png';
 
 export default function ProfileSummary() {
   return (
-    <aside>
+    <aside id="aside_profileSummary">
       <img alt="Imagem de Perfil" src={ profilePicture } id="profilePicture"/>
       <h1>Bruno Taveira</h1>
       <h4>@taveira_bruno</h4>
